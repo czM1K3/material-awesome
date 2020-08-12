@@ -11,33 +11,21 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.code,
-    type = 'code',
-    defaultApp = apps.default.editor,
-    screen = 1
-  },
-  {
-    icon = icons.social,
-    type = 'social',
-    defaultApp = apps.default.social,
-    screen = 1
-  },
-  {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = apps.default.game,
-    screen = 1
-  },
-  {
     icon = icons.folder,
     type = 'files',
     defaultApp = apps.default.files,
     screen = 1
   },
   {
-    icon = icons.music,
-    type = 'music',
-    defaultApp = apps.default.music,
+    icon = icons.terminal,
+    type = 'terminal',
+    defaultApp = apps.default.terminal,
+    screen = 1
+  },
+  {
+    icon = icons.code,
+    type = 'editor',
+    defaultApp = apps.default.editor,
     screen = 1
   },
   {
