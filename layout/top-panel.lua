@@ -6,6 +6,15 @@ local gears = require('gears')
 local clickable_container = require('widget.material.clickable-container')
 local mat_icon_button = require('widget.material.icon-button')
 local mat_icon = require('widget.material.icon')
+local layout_indicator = require("widget.keyboard-layout-indicator")
+
+-- define your layouts
+kbdcfg = layout_indicator({
+  layouts = {
+      {name="cz",  layout="cz",  variant="qwerty"},
+      {name="us",  layout="us",  variant=nil}
+  }
+})
 
 local dpi = require('beautiful').xresources.apply_dpi
 
@@ -129,6 +138,8 @@ local TopPanel = function(s, offset)
       layout = wibox.layout.fixed.horizontal,
       -- Clock
       clock_widget,
+      -- Keyboard layout changer
+      kbdcfg.widget,
       -- Layout box
       LayoutBox(s)
     }

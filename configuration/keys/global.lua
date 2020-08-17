@@ -17,6 +17,10 @@ local globalKeys =
   awful.key({altkey, 'Control'}, 'Up', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
   awful.key({altkey, 'Control'}, 'Down', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
   awful.key({modkey}, 'Escape', awful.tag.history.restore, {description = 'go back', group = 'tag'}),
+
+  awful.key({ "Shift"         }, "Shift_R", function() kbdcfg:next() end ),
+  awful.key({ "Mod4", "Shift" }, "Shift_R", function() kbdcfg:prev() end ),
+  
   -- Default client focus
   awful.key(
     {modkey},
