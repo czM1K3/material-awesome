@@ -17,7 +17,8 @@ return {
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
     browser = 'google-chrome-unstable',
     editor = 'code', -- gui text editor
-    files = 'nautilus --new-window'
+    files = 'nautilus --new-window',
+    music = 'spotify'
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
