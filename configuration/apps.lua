@@ -15,7 +15,7 @@ return {
     screenshot = 'flameshot full -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
-    browser = 'google-chrome-unstable',
+    browser = 'brave',
     editor = 'code', -- gui text editor
     files = 'nautilus --new-window',
     music = 'spotify'
