@@ -63,7 +63,7 @@ function mat_list_item:layout(_, width, height)
 end
 
 function mat_list_item:fit(_, width)
-  return width, dpi(48)
+  return width, dpi(38)
 end
 
 ---- Properties ----

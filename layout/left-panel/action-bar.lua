@@ -89,7 +89,7 @@ return function(screen, panel, action_bar_width)
     {
       -- Right widgets
       layout = wibox.layout.fixed.vertical,
-      wibox.container.margin(systray, dpi(10), dpi(10)),
+      wibox.container.margin(systray, dpi(6), dpi(2)),
       --require('widget.package-updater'),
       --require('widget.wifi'),
       require('widget.battery'),

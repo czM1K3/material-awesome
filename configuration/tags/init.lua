@@ -43,8 +43,8 @@ local tags = {
 }
 
 awful.layout.layouts = {
-  awful.layout.suit.tile,
   awful.layout.suit.max,
+  awful.layout.suit.tile,
   --awful.layout.suit.floating
 }
 
@@ -56,7 +56,7 @@ awful.screen.connect_for_each_screen(
         {
           icon = tag.icon,
           icon_only = true,
-          layout = awful.layout.suit.tile,
+          layout = awful.layout.suit.max,
           gap_single_client = false,
           gap = 0,
           screen = s,

@@ -23,7 +23,7 @@ local awesome_overrides =
   theme.dir = os.getenv('HOME') .. '/.config/awesome/theme'
 
   theme.icons = theme.dir .. '/icons/'
-  theme.wallpaper = theme.dir .. '/wallpapers/DarkCyan.png'
+  theme.wallpaper = theme.dir .. '/wallpapers/ellie.png'
   --theme.wallpaper = '#e0e0e0'
   theme.font = 'Roboto medium 10'
   theme.title_font = 'Roboto medium 14'
@@ -70,13 +70,13 @@ local awesome_overrides =
   theme.taglist_bg_occupied = theme.background.hue_800
   theme.taglist_bg_urgent =
     'linear:0,0:' ..
-    dpi(48) ..
+    dpi(38) ..
       ',0:0,' ..
         theme.accent.hue_500 ..
           ':0.08,' .. theme.accent.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
   theme.taglist_bg_focus =
     'linear:0,0:' ..
-    dpi(48) ..
+    dpi(38) ..
       ',0:0,' ..
         theme.primary.hue_500 ..
           ':0.08,' .. theme.primary.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
@@ -87,7 +87,7 @@ local awesome_overrides =
   theme.tasklist_bg_normal = theme.background.hue_800
   theme.tasklist_bg_focus =
     'linear:0,0:0,' ..
-    dpi(48) ..
+    dpi(38) ..
       ':0,' ..
         theme.background.hue_800 ..
           ':0.95,' .. theme.background.hue_800 .. ':0.95,' .. theme.fg_normal .. ':1,' .. theme.fg_normal

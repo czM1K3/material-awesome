@@ -80,8 +80,8 @@ return function(_, panel)
         opacity = 0.08,
         widget = wibox.widget.separator
       },
-      require('layout.left-panel.dashboard.quick-settings'),
-      require('layout.left-panel.dashboard.hardware-monitor')
+      --require('layout.left-panel.dashboard.quick-settings'),
+      --require('layout.left-panel.dashboard.hardware-monitor')
     },
     nil,
     {

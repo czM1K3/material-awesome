@@ -33,7 +33,7 @@ local widget =
   layout = wibox.layout.fixed.horizontal
 }
 
-local widget_button = clickable_container(wibox.container.margin(widget, dpi(14), dpi(14), 4, 4))
+local widget_button = clickable_container(wibox.container.margin(widget, dpi(14), dpi(14), 2, 4))
 widget_button:buttons(
   gears.table.join(
     awful.button(
@@ -50,7 +50,7 @@ widget_button:buttons(
 local battery_popup =
   awful.tooltip(
   {
-    objects = {widget_button},
+    --objects = {widget_button},
     mode = 'outside',
     align = 'left',
     preferred_positions = {'right', 'left', 'top', 'bottom'}
@@ -65,7 +65,7 @@ local battery_popup =
 local function show_battery_warning()
   naughty.notify {
     icon = PATH_TO_ICONS .. 'battery-alert.svg',
-    icon_size = dpi(48),
+    icon_size = dpi(38),
     text = 'Huston, we have a problem',
     title = 'Battery is dying',
     timeout = 5,
